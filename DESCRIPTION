@@ -7,9 +7,24 @@ Authors@R:
            role = c("aut", "cre"),
            email = "sebastian.funk@lshtm.ac.uk")
 Description: Contains all the code and data required to generate the figures and tables in the manuscript.
+Depends:
+    R (>= 3.5.0),
+    wpp2015,
+    socialmixr,
+    epimixr,
+    tidyverse,
+    magrittr,
+    countrycode,
+    cowplot,
+    scales,
+    tidyverse,
+    knitr,
+    kableExtra,
+    formattable
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/sbfnk/immunity.thresholds
 BugReports: https://github.com/sbfnk/immunity.thresholds/issues
+RoxygenNote: 6.1.1
