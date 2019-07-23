@@ -22,7 +22,7 @@ a data frame representing a toy data set of individual serology results, with co
 Create a toy individualised data set of seroprevalence
 }
 \examples{
-  ms.sero <- toy_sero_ds(survey.yr=2002, pos_eqi=list(Germany=c(0.8, 0.1), Finland=c(0.9, 0)), lower.age.limits=seq(0, 70, by=5), n=100)
+  ms.sero <- toy_sero_ds(survey.yr=2002, pos_eqi=list(Spain=c(0.8, 0.1), Ireland=c(0.9, 0)), lower.age.limits=seq(0, 70, by=5), n=100)
 }
 \author{
 Sebastian Funk <sebastian.funk@lshtm.ac.uk>
