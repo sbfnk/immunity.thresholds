@@ -48,7 +48,7 @@ ms.sero <- toy_sero_ds(survey.yr=2002, pos_eqi=list(Spain=c(0.8, 0.1), Ireland=c
 Using the toy data set or the original data set, once can generate a results on adjusted immunity levels from the different models used in the manuscript, by running the `serology_sample.r` script:
 
 ```{r eval=FALSE}
-source("analysis/serology_sample.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "serology_sample.r")))
 ```
 
 This generates a variable called `sero_adjImm` containing the results. The results form the paper using the original data set are contained in the `esen2_adjImm` data set in the package:
@@ -61,7 +61,7 @@ sero_adjImm <- esen2_adjImm
 To generate scenarios of adjusted immunity, one can run
 
 ```{r eval=FALSE}
-source("analysis/scenarios_sample.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "scenarios_sample.r")))
 ```
 
 This creates a variable called `scenarios_adjImm` containing the results for all countries in the paper except the South-East Asian countries from the SMILI study, for which contact data are available upon request (see "Data availability" statement in the manuscript for contacts). The full results including all contact data are included in the package and can be loaded with
@@ -75,11 +75,11 @@ data(scenarios_adjImm)
 To generate Figures 1 and 2 and Tables 1 and 2 from the paper from a `sero_adjImm` variable (see above), one can run
 
 ```{r eval=FALSE}
-source("analysis/serology_analysis.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "serology_analysis.r")))
 ```
 
 To generate Figure 3 from the paper from a `scenarios_adjImm` variable (see above), one can run
 
 ```{r eval=FALSE}
-source("analysis/scenarios_analysis.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "scenarios_analysis.r")))
 ```
