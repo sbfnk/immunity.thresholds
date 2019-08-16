@@ -1,4 +1,4 @@
-nsamples <- 2
+if (!exists("nsamples") || !(is.numeric(nsamples))) stop("nsamples must be set")
 
 age_limits <- seq(0, 20, by = 5)
 targets <- list(current = c(0.85, 0.9, 0.95, 0.95, 0.95),

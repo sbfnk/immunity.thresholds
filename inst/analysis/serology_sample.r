@@ -1,4 +1,4 @@
-nsamples <- 1000
+if (!exists("nsamples") || !(is.numeric(nsamples))) stop("nsamples must be set")
 
 data(mcv_world_estimate) ## measles coverage estimates
 data(esen2_schedules) ## vaccination schedules
