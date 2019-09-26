@@ -9,7 +9,8 @@ This repository contains the data and code for our paper:
 > Alya J. Dabbagh, Katrina Kretsinger, Mark Jit, W. John Edmunds and
 > Peter M. Strebel (2019). *Combining serological and contact data to
 > derive target immunity levels for achieving and maintaining measles
-> elimination*. bioRxiv, online at <https://doi.org/10.1101/201574>
+> elimination*. BMC Medicine 17:180, online at
+> <https://doi.org/10.1186/s12916-019-1413-7>
 
 ### How to download or install
 
@@ -46,7 +47,7 @@ toy data set of this type can be created with the `toy_sero_ds` function
 included in the package:
 
 ``` r
-ms.sero <- toy_sero_ds(survey.yr=2002, pos_eqi=list(Germany=c(0.8, 0.1), Finland=c(0.9, 0)), lower.age.limits=seq(0, 70, by=5), n=100)
+ms.sero <- toy_sero_ds(survey.yr=2002, pos_eqi=list(Spain=c(0.8, 0.1), Ireland=c(0.9, 0)), lower.age.limits=seq(0, 70, by=5), n=100)
 ```
 
 Using the toy data set or the original data set, once can generate a
@@ -54,7 +55,7 @@ results on adjusted immunity levels from the different models used in
 the manuscript, by running the `serology_sample.r` script:
 
 ``` r
-source("analysis/serology_sample.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "serology_sample.r")))
 ```
 
 This generates a variable called `sero_adjImm` containing the results.
@@ -69,7 +70,7 @@ sero_adjImm <- esen2_adjImm
 To generate scenarios of adjusted immunity, one can run
 
 ``` r
-source("analysis/scenarios_sample.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "scenarios_sample.r")))
 ```
 
 This creates a variable called `scenarios_adjImm` containing the results
@@ -89,12 +90,12 @@ To generate Figures 1 and 2 and Tables 1 and 2 from the paper from a
 `sero_adjImm` variable (see above), one can run
 
 ``` r
-source("analysis/serology_analysis.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "serology_analysis.r")))
 ```
 
 To generate Figure 3 from the paper from a `scenarios_adjImm` variable
 (see above), one can run
 
 ``` r
-source("analysis/scenarios_analysis.r")
+source(system.file(package="immunity.thresholds", file.path("analysis", "scenarios_analysis.r")))
 ```
