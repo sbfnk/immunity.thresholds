@@ -9,7 +9,8 @@ This repository contains the data and code for our paper:
 > Alya J. Dabbagh, Katrina Kretsinger, Mark Jit, W. John Edmunds and
 > Peter M. Strebel (2019). *Combining serological and contact data to
 > derive target immunity levels for achieving and maintaining measles
-> elimination*. bioRxiv, online at <https://doi.org/10.1101/201574>
+> elimination*. BMC Medicine 17:180, online at
+> <https://doi.org/10.1186/s12916-019-1413-7>
 
 ### How to download or install
 
