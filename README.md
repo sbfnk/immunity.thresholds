@@ -3,6 +3,8 @@
 
 # Combining serological and contact data to derive target immunity levels for achieving and maintaining measles elimination
 
+> **Archived.** No longer maintained; last updated November 2019.
+
 This repository contains the data and code for our paper:
 
 > Sebastian Funk, Jennifer K. Knapp, Emmaculate Lebo, Susan E. Reef,
